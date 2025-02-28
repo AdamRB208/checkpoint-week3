@@ -22,3 +22,18 @@ main {
   justify-content: start;
   align-items: end;
 }
+
+/* .note-details {
+  align-items: flex-start;
+} */
+
+/* .date {
+  display: inline-block;
+} */
+
+.color-bubble {
+  height: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: thin solid black;
+}
