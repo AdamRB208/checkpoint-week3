@@ -1,8 +1,12 @@
 /* BASIC STYLES HERE */
+
+
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: rgba(30, 30, 85, 0.929);
 }
 
 main {

@@ -16,7 +16,7 @@
   <!-- SECTION -->
   <header>
     <nav class="navbar bg-codeworks text-light gap-2 px-2">
-      <div class="mdi mdi-marker"><s>Classified </s>Notes</div>
+      <div class="mdi mdi-marker"><s><i> Redacted</i></s> Notes</div>
       <div class="ms-auto" id="authstate"></div>
       </div>
     </nav>
@@ -24,11 +24,26 @@
 
   <!-- SECTION FOR MAIN -->
 
-  <main>
-    <div class="section">
-      <div class="row">
-        <div class="col-12">
-
+  <main class="d-flex">
+    <div class="container-fluid">
+      <div class="row justify-content- start">
+        <div class="col-4 text-light">
+          <h3><s><i> Current Open</i></s> Notes...</h3>
+          <form>
+            <div>
+              <label class="mb-2" for="createNote">Create a Classified Document</label>
+              <div></div>
+              <input class="mb-3" id="createNote" name="note" type="text" required minlength="3" maxlength="15"
+                placeholder="Classified Data Here...">
+              <button class="mb-3"><s><i> Create</i></s> Document</button>
+            </div>
+          </form>
+          <h5>Saved Note Example</h5>
+          <p>date</p>
+          <p>note content</p>
+        </div>
+        <div class="col-8 text-light">
+          where notes are made
         </div>
       </div>
     </div>
