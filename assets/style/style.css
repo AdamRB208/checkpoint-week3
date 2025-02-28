@@ -23,6 +23,11 @@ main {
   align-items: end;
 }
 
+.note-content {
+  flex-direction: column;
+  align-content: flex-start;
+}
+
 /* .note-details {
   align-items: flex-start;
 } */

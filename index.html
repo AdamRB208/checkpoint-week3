@@ -26,30 +26,31 @@
 
   <main class="d-flex">
     <div class="container-fluid">
-      <div class="row justify-content- start">
+      <div class="row d-flex note-content">
         <div class="col-4 text-light note-details">
           <h3><s><i> Current Open</i></s> Notes...</h3>
           <form>
-            <div>
-              <label for="color">Classification Color:</label>
-              <input class="color-button" type="color" id="color" value="#ff0000">
-              <div> </div>
-              <label class="mb-2" for="createTitle">Create a Classified Document</label>
-              <div></div>
-              <input class="mb-3" id="createTitle" name="note" type="text" required minlength="3" maxlength="15"
-                placeholder="Document Title...">
-              <button class="mb-3"><s><i> Create</i></s> Document</button>
-            </div>
+            <div></div>
+            <!-- STUB starts here -->
+            <label for="color">Classification Color:</label>
+            <input class="color-button" type="color" id="color" value="#453ADF">
+            <div> </div>
+            <label class="mb-2" for="createTitle">Create a Classified Document</label>
+            <div></div>
+            <input class="mb-3" id="createTitle" name="note" type="text" required minlength="3" maxlength="15"
+              placeholder="Document Title...">
+            <button class="mb-3"><s><i> Create</i></s> Document</button>
           </form>
-          <!-- STUB Note template -->
-          <!-- <h5>Saved Notes</h5>
+          <h5>Saved Notes</h5>
           <p class="date">date</p>
-          <p>note content</p> -->
-        </div>
-        <div class="col-8 text-light">
-          where notes are made
+          <p>note content</p>
+          <!-- STUB ends here -->
         </div>
       </div>
+      <div class="col-8 text-light d-flex">
+        <div>where notes are made</div>
+      </div>
+    </div>
     </div>
 
   </main>
