@@ -28,10 +28,6 @@ main {
   align-content: flex-start;
 }
 
-/* .note-details {
-  align-items: flex-start;
-} */
-
 /* .date {
   display: inline-block;
 } */
@@ -41,4 +37,15 @@ main {
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: thin solid black;
+}
+
+.col-8 {
+  align-items: flex-start;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.note-card {
+  background-color: rgb(63, 59, 59);
+  max-width: 70%;
 }

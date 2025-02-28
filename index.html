@@ -27,11 +27,10 @@
   <main class="d-flex">
     <div class="container-fluid">
       <div class="row d-flex note-content">
-        <div class="col-4 text-light note-details">
+        <div class="col-4 text-light">
           <h3><s><i> Current Open</i></s> Notes...</h3>
-          <form>
+          <form onsubmit="app.noteAppController.createNote()">
             <div></div>
-            <!-- STUB starts here -->
             <label for="color">Classification Color:</label>
             <input class="color-button" type="color" id="color" value="#453ADF">
             <div> </div>
@@ -42,9 +41,12 @@
             <button class="mb-3"><s><i> Create</i></s> Document</button>
           </form>
           <h5>Saved Notes</h5>
-          <p class="date">date</p>
-          <p>note content</p>
-          <!-- STUB ends here -->
+          <article class="note-card">
+            <span class="mdi mdi-fountain-pen fs-4" style="color:blue"></span>
+            <div class="fs-3">Note Title</div>
+            <p class="date fs-5">date</p>
+            <p class="fs-4">note content</p>
+          </article>
         </div>
       </div>
       <div class="col-8 text-light d-flex">
