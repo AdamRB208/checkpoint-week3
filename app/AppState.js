@@ -8,19 +8,22 @@ class ObservableAppState extends EventEmitter {
     new Note({
       color: 'red',
       title: 'text',
-      date: '02/28/2025'
+      date: '02/28/2025',
+      content: 'text'
     }),
 
     new Note({
       color: 'blue',
       title: 'text',
-      date: '01/28/2025'
+      date: '01/28/2025',
+      content: 'text'
     }),
 
     new Note({
       color: 'green',
       title: 'text',
-      date: '01/08/2025'
+      date: '01/08/2025',
+      content: 'text'
     }),
 
   ]

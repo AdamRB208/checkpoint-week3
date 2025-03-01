@@ -25,6 +25,21 @@ export class NoteController {
 
   }
 
+  createNewNote() {
+    console.log(event)
+    event.preventDefault()
+    // let noteColor = event.target.color.value
+
+    // const form = event.target
+
+
+  }
+
+
+
+
 }
+
+
 
 console.log(NoteController)
