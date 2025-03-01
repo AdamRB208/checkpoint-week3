@@ -5,16 +5,26 @@ export class NoteController {
   constructor() {
     AppState.on('notes', this.drawNotes)
 
+
+    // On page load do this
+    this.drawNotes()
+
   }
 
   drawNotes() {
-    console.log('notes drawn')
+
     const notes = AppState.notes
 
     let notesCardContent = ''
 
     notes.forEach(note => notesCardContent += note.noteHTMLTemplate)
 
+    const savedNotesElem = document.getElementById('savedNotes')
+
+    savedNotesElem.innerHTML = notesCardContent
 
   }
+
 }
+
+console.log(NoteController)

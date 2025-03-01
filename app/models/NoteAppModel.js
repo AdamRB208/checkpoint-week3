@@ -13,10 +13,10 @@ export class Note {
   get noteHTMLTemplate() {
     return `
     <article class="note-card">
-            <span class="mdi mdi-fountain-pen fs-4" style="color:blue"></span>
-            <div class="fs-3">Note Title</div>
-            <p class="date fs-5">date</p>
-            <p class="fs-4">note content</p>
+            <span class="mdi mdi-fountain-pen fs-4" style="color:${this.color}"></span>
+            <div class="fs-3">${this.title}</div>
+            <p class="date fs-5">${this.date}</p>
+            <p class="fs-4">${this.content}</p>
           </article>
     `
   }
