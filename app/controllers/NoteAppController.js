@@ -36,10 +36,6 @@ export class NoteController {
   }
 
 
-
-
 }
-
-
 
 console.log(NoteController)
