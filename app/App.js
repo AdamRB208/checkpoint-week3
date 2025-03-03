@@ -2,7 +2,8 @@
 import { NoteController } from './controllers/NoteAppController.js';
 
 class App {
-  noteController = new NoteController()
+  noteAppController = new NoteController()
+
 
 }
 

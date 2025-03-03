@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { notesAppService } from "../services/NoteAppService.js";
 
 
 export class NoteController {
@@ -8,7 +9,9 @@ export class NoteController {
 
     // On page load do this
     this.drawNotes()
+    console.log('note controller initiated', NoteController)
 
+    console.log('new note initiated', this.createNewNote)
   }
 
   drawNotes() {
@@ -23,16 +26,23 @@ export class NoteController {
 
     savedNotesElem.innerHTML = notesCardContent
 
+
+
   }
 
   createNewNote() {
-    console.log(event)
     event.preventDefault()
-    // let noteColor = event.target.color.value
+    const form = event.target
+    let formColor = event.target.color.value
+    console.log('Form color value:', formColor);
+    let formCreateTitle = event.target.createTitle.placeholder
+    console.log('title created', form);
+    let formSubmit = event.target.submit.button
+    console.log('note submitted', formSubmit);
 
-    // const form = event.target
+    notesAppService.createNewNote(form)
 
-
+    // this.drawNotes()
   }
 
 
