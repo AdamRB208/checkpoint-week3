@@ -59,7 +59,9 @@ export class NoteController {
   }
 
   deleteNote(noteId) {
+    const confirmed = confirm('Are you sure you want to delete this note? This cannot be undone.')
     console.log('deleting', noteId);
+    if (confirmed == false) return
     notesAppService.deleteNote(noteId)
   }
 }

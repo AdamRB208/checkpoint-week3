@@ -29,7 +29,8 @@ main {
 }
 
 /* .date {
-  display: inline-block;
+  display: block;
+  font-size: small;
 } */
 
 .color-bubble {

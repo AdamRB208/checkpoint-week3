@@ -6,7 +6,7 @@ export class Note {
     this.id = generateId
     this.color = data.color;
     this.title = data.title;
-    this.date = data.date;
+    this.date = new Date()
     this.content = data.content;
 
   }
@@ -31,15 +31,21 @@ export class Note {
     return `
     <button class="note-card">
             <article>
-              <span class="mdi mdi-fountain-pen fs-4" style="color:${this.color}"></span>
+              <span class="mdi mdi-fountain-pen fs-4" style="color:'${this.color}'"></span>
               <div class="fs-3">${this.title}</div>
-              <p class="date fs-5">${this.date}</p>
+              <small class="date fs-5">${this.date}</small>
               <p class="fs-4">${this.content}</p>
-              <button onclick="app.noteAppController.deleteNote(${this.id})" class="mdi mdi-delete">Delete Note</button>
+              <button onclick="app.noteAppController.deleteNote('${this.id}')" class="mdi mdi-delete">Delete
+                Note</button>
             </article>
           </button>
-    `;
+    `
   }
+
+  // get dateFormatted() {
+  //   return this.listingDate.toLocaleDateString('en-US', { weekday: 'long', year: '2-digits', month: 'short' })
+  // }
+
 
 }
 
