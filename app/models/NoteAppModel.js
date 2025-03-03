@@ -3,10 +3,10 @@
 export class Note {
   constructor(data) {
     // this.id = generateID()
-    this.color = data.color
-    this.title = data.title
-    this.date = data.date
-    this.content = data.content
+    this.color = data.color;
+    this.title = data.title;
+    this.date = data.date;
+    this.content = data.content;
 
   }
 
@@ -20,7 +20,7 @@ export class Note {
             <p class="fs-4">${this.content}</p>
           </article>
           </button>
-    `
+    `;
   }
 
 }
