@@ -1,5 +1,6 @@
 import { AppState } from "../AppState.js";
 import { Note } from "../models/NoteAppModel.js";
+import { Pop } from "../utils/Pop.js";
 
 
 class NoteService {
@@ -8,6 +9,15 @@ class NoteService {
     AppState.notes.push(note);
     this.saveNotes();
 
+  }
+
+  deleteNote(noteId) {
+    const noteToDelete = AppState.notes.find(note => note.id == noteId);
+    const indexToRemove = AppState.notes.indexOf(noteToDelete)
+    console.log('deleted note', noteToDelete)
+    AppState.notes.splice(indexToRemove, 1)
+    Pop.toast(`deleted ${noteToDelete.title}`)
+    this.saveNotes()
   }
 
 
@@ -25,8 +35,11 @@ class NoteService {
 
     const notesData = JSON.parse(notesString)
     console.log('saved notes', notesData)
+    if (notesData == null) return
+
     const notes = notesData.map(noteData => new Note(noteData))
     AppState.notes = notes
+
   }
 }
 

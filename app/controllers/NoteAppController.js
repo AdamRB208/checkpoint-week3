@@ -29,6 +29,13 @@ export class NoteController {
     savedNotesElem.innerHTML = notesCardContent
 
 
+    // let notesFormContent = ''
+
+    // notes.forEach(note => notesFormContent += note.noteHTMLForm)
+
+    // const createNoteElem = document.getElementById('createNote')
+
+    // createNoteElem.innerHTML = notesFormContent
 
   }
 
@@ -51,7 +58,10 @@ export class NoteController {
 
   }
 
-
+  deleteNote(noteId) {
+    console.log('deleting', noteId);
+    notesAppService.deleteNote(noteId)
+  }
 }
 
 console.log(NoteController)

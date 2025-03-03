@@ -35,7 +35,7 @@ main {
 .color-bubble {
   height: 2rem;
   aspect-ratio: 1/1;
-  border-radius: 50%;
+  border-radius: 12px;
   border: thin solid black;
 }
 
@@ -48,4 +48,14 @@ main {
 .note-card {
   background-color: rgb(91, 89, 89);
   max-width: 70%;
+}
+
+.mdi-delete {
+  background-color: rgb(91, 89, 89);
+  border-radius: 12px;
+  display: block;
+}
+
+.create-doc-btn {
+  display: block;
 }

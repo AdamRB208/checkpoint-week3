@@ -28,7 +28,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-4 text-light">
-          <h3><s><i> Current Open</i></s> Notes...</h3>
+          <h3 id="createNote"><s><i> Current Open</i></s> Notes...</h3>
           <form onsubmit="app.noteAppController.createNewNote(event)">
             <div></div>
             <label for="color">Classification Color:</label>
@@ -38,7 +38,7 @@
             <div></div>
             <input class="mb-3" id="createTitle" name="note" type="text" required minlength="3" maxlength="15"
               placeholder="Document Title...">
-            <button type="submit" class="mb-3"><s><i> Create</i></s> Document</button>
+            <button type="submit" class=" create-doc-btn mb-3"><s><i> Create</i></s> Document</button>
           </form>
           <h5 id="savedNotes">Saved Notes</h5>
           <!-- STUB Note Card  -->
@@ -48,6 +48,8 @@
               <div class="fs-3">Note Title</div>
               <p class="date fs-5">date</p>
               <p class="fs-4">note content</p>
+              <button onclick="app.noteAppController.deleteNote(${this.id})" class="mdi mdi-delete">Delete
+                Note</button>
             </article>
           </button> -->
         </div>
